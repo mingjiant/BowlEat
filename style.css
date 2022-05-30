@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+li, a {
+    font-size: 16px;
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+/* Header and Navigation */
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.header_top {
+    padding: 10px 0px 20px;
+}
+
+.logo {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0px 70px;
+}
+
+.logo:hover {
+    color: #006600;
+}
+
+.top_right {
+    float: right;
+    position: relative;
+    list-style: none;
+    padding: 0px 40px;
+}
+
+.top_right li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.top_right li a {
+    transition: all 0.3s ease 0s;
+}
+
+.top_right li a:hover {
+    color: #006600;
+}
+
+.container nav {
+    background: #AED581;
+    height: 60px;
+    font-weight: bold;
+}
+
+.nav_links {
+    list-style: none;
+    padding: 20px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 100px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #006600;
+}
+
+/* Home Page SlideShow */
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.caption_text {
+    font-size: 35px;
+    padding: 10px;
+    position: absolute;
+    left: 250;
+    bottom: 290;
+    width: 50%;
+    text-align: center;
+    text-shadow: 3px 1px #ffffff;
+    letter-spacing: 2px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+.postings {
+    text-align: center;
+}
+
+.post_img img {
+    padding: 10px;
+    margin-top: 60px;
+    width: 80%;
+    left: 130;
+}
+
+.post1 h2 {
+    padding: 10px;
+}
+
+.post1 p {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.post1 button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    color: #000000;
+    background: #AED581;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+
+/* About Us Page */
+.top_content {
+    text-align: center;
+}
+
+.about_title h2 {
+    font-size: 40px;
+    position: absolute;
+    left: 550;
+    bottom: 180px;
+    width: 15%;
+    text-shadow: 3px 1px #ffffff;
+}
+
+.about_title img {
+    width: 80%;
+    height: 90%;
+    opacity: 0.9;
+}
+
+.description {
+    position: relative;
+    left: 100;
+    width: 80%;
+    margin: 50px;
+    text-align: center;
+}
+
+.description h2 {
+    border-bottom: 1px solid #bbb;
+}
+
+.row {
+    padding: 50px;
+    line-height: 2.0;
+    word-spacing: 3px;
+}
+
+/* Contact Us Page */
+.contact_title h2 {
+    font-size: 40px;
+    position: absolute;
+    left: 480;
+    bottom: 180px;
+    width: 25%;
+    text-shadow: 3px 1px #ffffff;
+}
+
+.contact_title img {
+    width: 80%;
+    height: 85%;
+    opacity: 0.9;
+}
+
+.enquiry_form {
+    position: relative;
+    left: 100;
+    width: 80%;
+    text-align: center;
+    margin: 30px;
+}
+
+.enquiry_form h2 {
+    padding: 20px;
+    border-bottom: 1px solid #bbb;
+}
+
+.enquiry_form p {
+    padding: 20px;
+}
+
+/* Sign in, Sign up, Contact us forms */
+.form_header {
+    text-align: center;
+    margin: 150px auto 0px;
+    width: 40%;
+    border: 1px solid #000000;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+    background:#AED581;
+    padding: 10px;
+}
+
+.user_form {
+    width: 40%;
+	margin: 0px auto;
+	padding: 20px;
+    border: 1px solid #000000;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+
+}
+
+.form_input {
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.form_input input {
+    height: 30px;
+    width: 40%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.form_input textarea {
+    height: 150px;
+    width: 40%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    resize: none;
+}
+
+.button {
+    position: absolute;
+    right: 400px;
+    padding: 10px;
+    font-size: 15px;
+    color: #000000;
+    background: #AED581;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.button:hover{
+    color: #0f7a0f;
+}
+
+.form_left a {
+    color: #1100ff;
+    text-decoration: underline;
+}
+
+.error {
+	width: 50%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: center;
+}
+
+.success {
+    text-align: center;
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
+
+/* Menu Page */
+.menu_title h2 {
+    font-size: 40px;
+    position: absolute;
+    left: 450;
+    bottom: 180px;
+    width: 30%;
+    text-shadow: 3px 1px #ffffff;
+}
+
+.menu_title img {
+    width: 80%;
+    opacity: 0.9;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.product_card {
+    text-align: center;
+    padding: 20px 20px 20px;
+    margin: 65px;
+    background-color: #dff0d8;
+    height: 550px;
+    width: 295px;
+}
+
+.product_img img{
+    width: 90%;
+}
+
+.product_name {
+    padding: 10px;
+}
+
+.product_desc {
+    padding: 10px 0px 10px;
+}
+
+.add_cart {
+    position: relative;
+    padding: 20px;
+}
+
+.add_cart span{
+    padding: 10px;
+    margin-left: 0px 10px;
+}
+
+.product_price {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.product_quantity {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: #E0E0E0 1px solid;
+}
+
+.add_cart_button {
+    padding: 10px 5px;
+    font-size: 15px;
+    color: #000000;
+    background: #AED581;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.add_cart_button:hover {
+    color: #0f7a0f;
+}
+
+/* Shopping Cart Page */
+.cart_title h2 {
+    font-size: 40px;
+    position: absolute;
+    left: 450;
+    bottom: 250px;
+    width: 30%;
+    text-shadow: 3px 1px #ffffff;
+}
+
+.cart_title img {
+    width: 80%;
+    opacity: 0.9;
+}
+
+.emptyButton {
+    padding: 10px;
+    margin: 10px;
+    background: #f76969;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    position: absolute;
+    right: 105;
+}
+
+.empty {
+    padding: 100px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.gotomenu {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 1000;
+    margin: 30px;
+}
+
+.gotomenu a:hover {
+    color: #006600;
+}
+
+.cart_item_img {
+    height: 150px;
+    width: 150px;
+}
+
+table {
+    padding: 30px;
+    width: 90%;
+    margin: 60px;
+}
+
+th {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+}
+
+.checkout {
+    float: right;
+}
+
+.checkout button {
+    padding: 10px;
+    margin: 10px;
+    background: #f76969;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    position: absolute;
+    right: 105;
+}
+
+/* Checkout Page */
+.checkout_page {
+    padding: 250px;
+    text-align: center;
+}
+
+.checkout_message {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.checkout_page a {
+    font-size: 18px;
+    color: #1100ff;
+    text-decoration: underline;
+}
+
+/* Admin Page */
+.admin_top_right {
+    float: right;
+    position: relative;
+    padding: 13px 30px;
+}
+
+.admin_container nav {
+    background: #AED581;
+    height: 60px;
+    font-weight: bold;
+}
+
+.admin_nav_links {
+    list-style: none;
+    padding: 20px;
+}
+
+.admin_nav_links li {
+    display: inline-block;
+    padding: 0px 140px;
+}
+
+.admin_nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.admin_nav_links li a:hover {
+    color: #006600;
+}
+
+.title h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.admin_title h2 {
+    font-size: 40px;
+    position: absolute;
+    left: 450;
+    bottom: 250px;
+    width: 30%;
+    text-shadow: 0px 0px #ffffff;
+    color: #ffffff;
+}
+
+.admin_title img {
+    width: 80%;
+    opacity: 0.9;
+}
+
+
+/* Admin - View Menu */
+.menu_table img {
+    width: 90%;
+}
+
+/* Admin - Edit Menu & Edit User */
+.edit_header {
+    text-align: center;
+    margin: 100px auto 0px;
+    width: 60%;
+    border: 1px solid #000000;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+    background:#AED581;
+    padding: 10px;
+}
+
+.edit_form {
+    width: 60%;
+	margin: 0px auto;
+	padding: 50px;
+    border: 1px solid #000000;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.edit_input {
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.edit_input input {
+    height: 40px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.edit_input button {
+    position: absolute;
+    right: 305px;
+}
+
+.edit_left a {
+    color: #1100ff;
+    text-decoration: underline;
+}
+
+/* Admin - Delete Menu & Delete User */
+.delete_header {
+    text-align: center;
+    margin: 55px auto 0px;
+    width: 60%;
+    border: 1px solid #000000;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+    background:#AED581;
+    padding: 10px;
+}
+
+.delete_form {
+    width: 60%;
+	margin: 0px auto;
+	padding: 50px;
+    border: 1px solid #000000;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.radio_input {
+    text-align: center;
+    padding: 10px;
+}
+
+.delete_form p {
+    text-align: center;
+    padding: 5px;
+}
+
+.delete_img img {
+    width: 30%;
+}
+
+.delete_form button {
+    position: absolute;
+    right: 350px;
+}
+
+.delete_left a {
+    position: absolute;
+    left: 350px;
+    text-align: left;
+    color: #1100ff;
+    text-decoration: underline;
+}
